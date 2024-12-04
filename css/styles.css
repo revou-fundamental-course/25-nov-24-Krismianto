@@ -1,31 +1,36 @@
 /* ini file css */
+/* Styling utama */
 main {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap; /* Agar elemen dalam main bisa membungkus jika ruang terbatas */
 }
 
 .form-item {
     margin: 5px;
+    width: 100%;  /* Membuat form item lebar 100% agar responsif */
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Pastikan elemen dalam container mengikuti arah kolom */
 }
 
+/* Styling untuk teks hasil BMI */
 #nilai-text {
-    font-size: 26px;   /* Ukuran font menjadi 24px */
-    font-weight: bold; /* Membuat teks menjadi tebal */
+    font-size: 26px;
+    font-weight: bold;
 }
 
 #result-calculation {
-    font-size: 32px;    /* Ukuran angka menjadi 36px */
-    font-weight: bold;  /* Membuat angka lebih tebal */
+    font-size: 32px;
+    font-weight: bold;
     text-align: center;
 }
-    
-#info-result{
+
+#info-result {
     font-size: 22px;
 }
 
@@ -37,11 +42,13 @@ footer {
     text-align: center;
 }
 
+/* Styling untuk form */
 form {
     padding: 10px;
     background-color: lavender;
     border-radius: 10px;
     margin-top: 5px;
+    width: 100%; /* Pastikan form menggunakan lebar penuh */
 }
 
 label {
@@ -82,3 +89,70 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Penyakit */
+.penyakit {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.penyakit h3 {
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+.penyakit p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+        padding: 10px; /* Menambah padding agar tampilan tidak terlalu rapat */
+    }
+
+    .form-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    input[type="number"], button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    button {
+        margin: 10px 0;
+    }
+
+    #result-calculation {
+        font-size: 30px; /* Ukuran angka lebih kecil agar muat di layar kecil */
+    }
+
+    #nilai-text {
+        font-size: 22px;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .penyakit {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
