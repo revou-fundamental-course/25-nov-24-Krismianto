@@ -9,21 +9,27 @@ main {
 }
 
 .container {
-    /* display: grid; */
-    /* place-items: center; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.center {
-    display: grid;
+#nilai-text {
+    font-size: 26px;   /* Ukuran font menjadi 24px */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+}
+
+#result-calculation {
+    font-size: 32px;    /* Ukuran angka menjadi 36px */
+    font-weight: bold;  /* Membuat angka lebih tebal */
+    text-align: center;
+}
+    
+#info-result{
+    font-size: 22px;
 }
 
 .tombol {
-    /* display: flex; */
-    /* justify-content: spa; */
-    /* border: none; */
     margin: 0 5px;
 }
 

@@ -37,12 +37,12 @@
             </label>
             <br>
             <label>
-                <input type="radio" name="jenis_kelamin" value="pria" required>
+                <input type="radio" name="jenis-kelamin-input" value="pria" required>
                 Pria
             </label>
                 <br>
             <label>
-                <input type="radio" name="jenis_kelamin" value="wanita" required>
+                <input type="radio" name="jenis-kelamin-input" value="wanita" required>
                 Wanita
                 </label>
          </div>
@@ -52,7 +52,7 @@
                     Berat Badan (Kg)
                 </label>
                 <br>
-                <input type="number" id="berat-badan-input"/>
+                <input type="number" id="berat-badan-input" required/>
          </div>
     
          <div class="form-item">
@@ -60,7 +60,7 @@
                     Usia (Tahun)
                 </label>
                 <br>
-                <input type="number" id="usia-input"/>
+                <input type="number" id="usia-input" required/>
          </div>
     
          <div class="form-item">
@@ -68,12 +68,12 @@
                 Tinggi Badan (Cm)
             </label>
             <br>
-            <input type="number" id="tinggi-badan-input"/>
+            <input type="number" id="tinggi-badan-input" required/>
      </div>
     
      <div class="form-item">
-            <button>Hitung BMI</button>
-            <button>Reset</button>
+            <button type="button" id="hitung-bmi">Hitung BMI</button>
+            <button type="reset" id="reset-form">Reset</button>
      </div>
          </form>
     
@@ -103,11 +103,11 @@
             <h2>Hasil</h2>
         </header>
             <form>
-                <p class="container">Berat Badan Lebih</p>
+                <p class="container" id="nilai-text">Nilai</p>
 
                 <div class="container" id="result-calculation">0</div>
 
-                <p class="container" id="info-result">Anda memiliki berat badan</p>
+                <p class="container" id="info-result">Anda memiliki :</p>
                 <div class="container">
                 <button class="tombol">Download Hasil BMI</button>
                 </div>
@@ -115,7 +115,7 @@
                 
         <!-- Third Artikel -->
          <article>
-            <p>Hasil BMI antara 23 dan 25</p>
+            <p>Hasil BMI antara 25 dan 30</p>
             <p style="margin: 0">Anda berada dalam kategori overweight atau berat badan berlebih.</p>
             <p style="margin: 0">Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang</p>
             <p style="margin: 0">dikonsumsi dan berolahraga.</p>
@@ -134,12 +134,13 @@
             <p style="margin: 0">berat badan Anda.</p>
          </article>
             <form>
-                <p class="container">Beberapa Penyakit yang Berasal dari Kegemukan</p>
+                <section class="penyakit">
+                    <h3>Beberapa Penyakit yang Berasal dari Kegemukan</h3>
             <p class="container" style="margin: 0">Diabetes</p>
             <p class="container" style="margin: 0">Hipertensi</p>
             <p class="container" style="margin: 0">Sakit Jantung</p>
             <p class="container" style="margin: 0">Osteoarthritis</p>
-            <br>
+                </section>                
         <div class="container">
             <button class="tombol">Konsultasi Dokter Via Aplikasi</button>
             <button class="tombol">Registrasi Online Sekarang</button>
@@ -147,6 +148,8 @@
             </form>      
     </section>
      </main>
+     <script src="js\script.js"></script>
+
  </body>
    
      <footer>
