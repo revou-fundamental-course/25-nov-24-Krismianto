@@ -1,9 +1,11 @@
 /* ini file css */
 
+/* Styling utama */
 main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap; /* Agar elemen dalam main bisa membungkus jika ruang terbatas */
+    gap: 15px; /* Jarak antar elemen */
 }
 
 .form-item {
@@ -109,8 +111,8 @@ button:hover {
     margin: 5px 0;
 }
 
-/* Responsive */
-@media only screen and (max-width: 480px) {
+/* Responsif */
+@media only screen and (max-width: 768px) {
     main {
         flex-direction: column;
         padding: 10px; /* Menambah padding agar tampilan tidak terlalu rapat */
@@ -154,5 +156,23 @@ button:hover {
 
     footer {
         padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+        justify-content: space-between;  /* Menambahkan ruang antara elemen pada layar besar */
+    }
+
+    .form-item {
+        width: 45%;  /* Menjaga agar form item tidak terlalu lebar pada layar besar */
+    }
+
+    input[type="number"], button {
+        font-size: 1.5vw;  /* Ukuran font akan lebih besar pada layar besar */
+    }
+
+    button {
+        margin: 0 5px;
     }
 }
