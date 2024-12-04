@@ -48,7 +48,12 @@ document.getElementById('hitung-bmi').addEventListener('click', function() {
 });
 
 // Fungsi untuk mereset form
-resetBtn.addEventListener('click', function() {
+document.getElementById('reset-form').addEventListener('click', function() {
+    // Reset form input
+    document.querySelector('form').reset();
+    
+    // Reset hasil BMI
     document.getElementById('result-calculation').textContent = '0';
     document.getElementById('info-result').textContent = 'Anda memiliki :';
+    document.getElementById('nilai-text').textContent = 'Nilai';
 });
