@@ -38,7 +38,7 @@ document.getElementById('hitung-bmi').addEventListener('click', function() {
         status = "Kegemukan (Obesitas)";
     }
 
-    infoResult.textContent = `Info berat badan Anda : ${status}`;
+    infoResult.textContent = `Hasil Penilaian BMI : ${status}`;
 
     // Menampilkan status BMI
     nilaiText.textContent = `Nilai BMI:`;
@@ -52,6 +52,6 @@ document.getElementById('reset-form').addEventListener('click', function() {
     
     // Reset hasil BMI
     document.getElementById('result-calculation').textContent = '0';
-    document.getElementById('info-result').textContent = 'Info berat badan Anda:';
+    document.getElementById('info-result').textContent = 'Hasil Penilaian BMI:';
     document.getElementById('nilai-text').textContent = 'Nilai';
 });
