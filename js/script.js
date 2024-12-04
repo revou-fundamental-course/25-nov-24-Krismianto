@@ -38,7 +38,7 @@ document.getElementById('hitung-bmi').addEventListener('click', function() {
         status = "Kegemukan (Obesitas)";
     }
 
-    infoResult.textContent = `Anda memiliki : ${status}`;
+    infoResult.textContent = `Anda memiliki berat badan: ${status}`;
 
     // Menampilkan status BMI
     nilaiText.textContent = `Nilai BMI:`;
