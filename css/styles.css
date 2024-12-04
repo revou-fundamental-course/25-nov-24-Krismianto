@@ -82,3 +82,15 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Responsive */
+@media only screen and (max-widht: 480px) {
+    main {
+        flex-direction: column;
+    }
+
+    .main-section {
+        widht: 100%;
+    }
+}
+
+
