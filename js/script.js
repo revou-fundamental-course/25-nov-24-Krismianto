@@ -52,6 +52,6 @@ document.getElementById('reset-form').addEventListener('click', function() {
     
     // Reset hasil BMI
     document.getElementById('result-calculation').textContent = '0';
-    document.getElementById('info-result').textContent = 'Anda memiliki :';
+    document.getElementById('info-result').textContent = 'Anda memiliki berat badan:';
     document.getElementById('nilai-text').textContent = 'Nilai';
 });
