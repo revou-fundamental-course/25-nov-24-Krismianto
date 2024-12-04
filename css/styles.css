@@ -1,5 +1,5 @@
 /* ini file css */
-/* Styling utama */
+
 main {
     display: flex;
     justify-content: space-evenly;
@@ -155,6 +155,8 @@ button:hover {
     footer {
         padding: 10px;
     }
+}
+
 }
 
 
