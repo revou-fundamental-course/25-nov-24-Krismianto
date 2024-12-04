@@ -1,5 +1,9 @@
 /* ini file css */
+<<<<<<< HEAD
 /* Styling utama */
+=======
+
+>>>>>>> 676ebbae7d5f7fcefa0f1027af933800805ddea8
 main {
     display: flex;
     justify-content: space-evenly;
@@ -156,3 +160,11 @@ button:hover {
         padding: 10px;
     }
 }
+<<<<<<< HEAD
+=======
+
+}
+
+
+
+>>>>>>> 676ebbae7d5f7fcefa0f1027af933800805ddea8
