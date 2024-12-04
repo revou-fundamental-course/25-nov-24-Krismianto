@@ -1,7 +1,5 @@
 // ini file js
 
-// ini adalah fie javascript
-
 document.getElementById('hitung-bmi').addEventListener('click', function() {
     // Mengambil nilai input
     const beratBadan = parseFloat(document.getElementById('berat-badan-input').value);
