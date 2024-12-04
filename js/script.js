@@ -52,6 +52,6 @@ document.getElementById('reset-form').addEventListener('click', function() {
     
     // Reset hasil BMI
     document.getElementById('result-calculation').textContent = '0';
-    document.getElementById('info-result').textContent = 'Hasil Penilaian BMI:';
+    document.getElementById('info-result').textContent = 'Hasil Penilaian BMI :';
     document.getElementById('nilai-text').textContent = 'Nilai';
 });
