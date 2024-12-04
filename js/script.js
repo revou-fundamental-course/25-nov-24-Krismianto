@@ -1,7 +1,5 @@
 // ini file js
 
-// ini adalah fie javascript
-
 document.getElementById('hitung-bmi').addEventListener('click', function() {
     // Mengambil nilai input
     const beratBadan = parseFloat(document.getElementById('berat-badan-input').value);
@@ -34,7 +32,7 @@ document.getElementById('hitung-bmi').addEventListener('click', function() {
         status = "Kekurangan berat badan";
     } else if (bmi >= 18.5 && bmi < 24.9) {
         status = "Normal (ideal)";
-    } else if (bmi >= 24,9 && bmi < 30) {
+    } else if (bmi >= 24.9 && bmi < 30) {
         status = "Kelebihan berat badan";
     } else {
         status = "Kegemukan (Obesitas)";
@@ -48,7 +46,12 @@ document.getElementById('hitung-bmi').addEventListener('click', function() {
 });
 
 // Fungsi untuk mereset form
-resetBtn.addEventListener('click', function() {
+document.getElementById('reset-form').addEventListener('click', function() {
+    // Reset form input
+    document.querySelector('form').reset();
+    
+    // Reset hasil BMI
     document.getElementById('result-calculation').textContent = '0';
     document.getElementById('info-result').textContent = 'Anda memiliki :';
+    document.getElementById('nilai-text').textContent = 'Nilai';
 });
