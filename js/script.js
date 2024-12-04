@@ -34,7 +34,7 @@ document.getElementById('hitung-bmi').addEventListener('click', function() {
         status = "Kekurangan berat badan";
     } else if (bmi >= 18.5 && bmi < 24.9) {
         status = "Normal (ideal)";
-    } else if (bmi >= 24,9 && bmi < 30) {
+    } else if (bmi >= 24.9 && bmi < 30) {
         status = "Kelebihan berat badan";
     } else {
         status = "Kegemukan (Obesitas)";
